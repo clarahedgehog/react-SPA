@@ -1,0 +1,18 @@
+.backgroundImage {
+  background-image: url("../images/background.jpg");
+  background-color: var(--background-white);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.backgroundImageText {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
