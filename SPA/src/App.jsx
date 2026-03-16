@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import BackgroundImage from './components/BackgroundImage'
+import DestinationContainer from './components/DestinationContainer'
+import TourPackagesContainer from './components/TourPackagesContainer'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
     <>
       <Header />
       <BackgroundImage />
+      <DestinationContainer />
+      <TourPackagesContainer />
     </>
   )
 }
