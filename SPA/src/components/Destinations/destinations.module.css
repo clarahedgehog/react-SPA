@@ -19,3 +19,15 @@
   -webkit-text-stroke: 1px black;
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+
+  .destination {
+    width: 100%;
+  }
+
+  .destinationImage {
+    height: auto;
+  }
+
+}

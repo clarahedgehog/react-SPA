@@ -32,3 +32,18 @@
   font-size: 3rem;
   margin-top: 0;
 }
+
+@media screen and (max-width: 768px) {
+
+  .packagesWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parentGrid {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+}

@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import BackgroundImage from './components/BackgroundImage'
-import DestinationContainer from './components/DestinationContainer'
-import TourPackagesContainer from './components/TourPackagesContainer'
+import FastGoPage from './components/FastGoPage'
+import Home from './components/Home'
+import HeaderTravel from './components/HeaderTravel'
 
 function App() {
 
+  const [page, setPage] = useState("")
 
   return (
     <>
-      <Header />
-      <BackgroundImage />
-      <DestinationContainer />
-      <TourPackagesContainer />
+      <HeaderTravel />
+      {page === "" && <Home updateFunction={setPage} />}
+      {page === "FastGo" && <FastGoPage updateFunction={setPage} />}
+
     </>
   )
 }

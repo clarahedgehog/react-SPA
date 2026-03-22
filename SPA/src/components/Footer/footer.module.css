@@ -1,0 +1,47 @@
+.footerContainer {
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding: 70px;
+}
+
+.footerNavigation {
+  width: 60%
+}
+
+.footerMenu {
+  width: 30%
+}
+
+.footerLinks {
+  width: 30%
+}
+
+h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .footerContainer {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .footerNavigation,
+  .footerMenu,
+  .footerLinks {
+    width: 100%;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+
+  .socials {
+    width: 40%;
+  }
+
+}

@@ -14,7 +14,22 @@
   left: 15px;
   bottom: 15px;
   color: white;
-  font-size: 2.5rem;
-  -webkit-text-stroke: 1px black;
+  font-size: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .packages {
+    height: auto;
+  }
+
+  .packagesImage {
+    height: auto;
+  }
+
 }
