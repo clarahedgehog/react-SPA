@@ -1,0 +1,35 @@
+.packages {
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+.packagesImage {
+  border-radius: 10px;
+  height: -webkit-fill-available;
+  aspect-ratio: 1;
+}
+
+.textContainer {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .packages {
+    height: auto;
+  }
+
+  .packagesImage {
+    height: auto;
+  }
+
+}

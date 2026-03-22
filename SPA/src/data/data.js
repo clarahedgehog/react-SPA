@@ -24,18 +24,6 @@ export const destinations = [
     description: "Historic capital filled with ancient ruins and Italian cuisine."
   },
   {
-    id: 3,
-    name: "Barcelona",
-    country: "Spain",
-    continent: "Europe",
-    coordinates: { lat: 41.3851, lng: 2.1734 },
-    rating: 4.7,
-    price: 1200,
-    tags: ["beach", "city", "architecture"],
-    image: "https://images.unsplash.com/photo-1505731132164-b3ce3d4f3f3f",
-    description: "Colorful architecture, beaches, and vibrant nightlife."
-  },
-  {
     id: 4,
     name: "Amsterdam",
     country: "Netherlands",
@@ -46,18 +34,6 @@ export const destinations = [
     tags: ["canals", "culture", "city"],
     image: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad",
     description: "Beautiful canals, museums, and cycling culture."
-  },
-  {
-    id: 5,
-    name: "London",
-    country: "United Kingdom",
-    continent: "Europe",
-    coordinates: { lat: 51.5074, lng: -0.1278 },
-    rating: 4.7,
-    price: 1500,
-    tags: ["city", "culture", "history"],
-    image: "https://images.unsplash.com/photo-1473959383413-c7c8b8f8c6f0",
-    description: "A global city with iconic landmarks and royal heritage."
   },
   {
     id: 6,
@@ -82,18 +58,6 @@ export const destinations = [
     tags: ["beach", "entertainment", "city"],
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     description: "Hollywood, beaches, and sunny California lifestyle."
-  },
-  {
-    id: 8,
-    name: "Tokyo",
-    country: "Japan",
-    continent: "Asia",
-    coordinates: { lat: 35.6762, lng: 139.6503 },
-    rating: 4.9,
-    price: 1700,
-    tags: ["technology", "culture", "city"],
-    image: "https://images.unsplash.com/photo-1505067216369-2d7c26a9a6e3",
-    description: "Ultra-modern city with ancient temples and incredible food."
   },
   {
     id: 9,
@@ -133,18 +97,6 @@ export const destinations = [
     description: "Tropical beaches and crystal clear waters."
   },
   {
-    id: 12,
-    name: "Dubai",
-    country: "UAE",
-    continent: "Asia",
-    coordinates: { lat: 25.2048, lng: 55.2708 },
-    rating: 4.7,
-    price: 1700,
-    tags: ["luxury", "desert", "city"],
-    image: "https://images.unsplash.com/photo-1504274066651-8d31a536b11a",
-    description: "Luxury skyscrapers and desert adventures."
-  },
-  {
     id: 13,
     name: "Singapore",
     country: "Singapore",
@@ -168,19 +120,6 @@ export const destinations = [
     image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
     description: "Home to the Opera House and Bondi Beach."
   },
-  {
-    id: 15,
-    name: "Melbourne",
-    country: "Australia",
-    continent: "Australia",
-    coordinates: { lat: -37.8136, lng: 144.9631 },
-    rating: 4.7,
-    price: 1700,
-    tags: ["culture", "food", "city"],
-    image: "https://images.unsplash.com/photo-1506086679525-9c2bdbb6d2c4",
-    description: "Australia's cultural and coffee capital."
-  },
-
   {
     id: 16,
     name: "Cape Town",
@@ -206,30 +145,6 @@ export const destinations = [
     description: "Historic city full of markets and palaces."
   },
   {
-    id: 18,
-    name: "Cairo",
-    country: "Egypt",
-    continent: "Africa",
-    coordinates: { lat: 30.0444, lng: 31.2357 },
-    rating: 4.6,
-    price: 1100,
-    tags: ["history", "pyramids", "culture"],
-    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d2f3f0",
-    description: "Gateway to the ancient pyramids of Giza."
-  },
-  {
-    id: 19,
-    name: "Rio de Janeiro",
-    country: "Brazil",
-    continent: "South America",
-    coordinates: { lat: -22.9068, lng: -43.1729 },
-    rating: 4.7,
-    price: 1400,
-    tags: ["beach", "festival", "nature"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-    description: "Famous for Carnival and Christ the Redeemer."
-  },
-  {
     id: 20,
     name: "Buenos Aires",
     country: "Argentina",
@@ -242,3 +157,14 @@ export const destinations = [
     description: "European-style city with vibrant culture."
   }
 ]
+
+const getRandomDestination = targetArray => {
+  const randomIndex = Math.floor(Math.random() * targetArray.length);
+  const randomDestination = targetArray[randomIndex]
+  targetArray.splice(randomIndex, 1)
+  return randomDestination
+}
+
+export const popularDestinations = [getRandomDestination(destinations), getRandomDestination(destinations), getRandomDestination(destinations),]
+
+export const tourPackages = [getRandomDestination(destinations), getRandomDestination(destinations), getRandomDestination(destinations),]

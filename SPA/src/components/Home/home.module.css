@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+
+
+.backgroundImage {
+  background-image: url("../images/background-home.png");
+  background-color: var(--background-white);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-family: "Cormorant Upright", serif;
+  font-size: 7rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.subTitle {
+  color: white;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 200;
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.buttonContainer {
+  gap: 16px;
+  display: flex;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  padding: 16px 70px;
+  background-color: white;
+  border: black solid 1.5px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: black;
+  border: white solid 1.5px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+  }
+
+  .buttonContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

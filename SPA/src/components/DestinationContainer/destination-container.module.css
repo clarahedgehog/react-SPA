@@ -1,0 +1,29 @@
+.destinationWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.destinationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destinationTitle {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .destinationContainer {
+    flex-direction: column;
+  }
+
+}
