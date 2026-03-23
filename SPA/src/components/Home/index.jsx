@@ -7,7 +7,7 @@ const Home = ({ updateFunction }) => {
       <h2 className={styles.subTitle}>React SPA</h2>
       <div className={styles.buttonContainer}>
         <button className={styles.button} onClick={() => updateFunction("FastGo")}>FastGo</button>
-        <button className={styles.button}>Travel</button>
+        <button className={styles.button} onClick={() => updateFunction("Travel")}>Travel</button>
       </div>
     </div>
   )
