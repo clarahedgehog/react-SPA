@@ -5,9 +5,8 @@
 
 .destinationImage {
   border-radius: 10px;
+  height: -webkit-fill-available;
   aspect-ratio: 1;
-  height: 450px;
-  width: 100%;
 }
 
 .destinationCountry {
@@ -16,7 +15,6 @@
   bottom: 15px;
   color: white;
   font-size: 2.5rem;
-  -webkit-text-stroke: 1px black;
   font-weight: bold;
 }
 

@@ -5,7 +5,7 @@
   background-color: var(--background-white);
   background-size: cover;
   background-position: 100% 30%;
-  height: 100vh;
+  height: 750px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -22,6 +22,7 @@
   color: white;
   flex-direction: column;
   padding: 100px;
+  text-align: start;
 }
 
 .title {
@@ -55,4 +56,36 @@
 .button:hover {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-position: 0%
+  }
+
+  .header {
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    padding: 40px;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .text {
+    display: none;
+  }
+
 }

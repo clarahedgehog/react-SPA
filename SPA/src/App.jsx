@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import FastGoPage from './components/FastGoPage'
 import Home from './components/Home'
-import HeaderTravel from './components/HeaderTravel'
+import TravelPage from './components/TravelPage'
 
 function App() {
 
@@ -9,10 +9,9 @@ function App() {
 
   return (
     <>
-      <HeaderTravel />
       {page === "" && <Home updateFunction={setPage} />}
       {page === "FastGo" && <FastGoPage updateFunction={setPage} />}
-
+      {page === "Travel" && <TravelPage updateFunction={setPage} />}
     </>
   )
 }

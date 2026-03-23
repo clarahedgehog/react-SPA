@@ -1,6 +1,6 @@
 .packages {
   position: relative;
-  height: -webkit-fill-available;
+  width: 32%;
 }
 
 .packagesImage {
@@ -25,11 +25,14 @@
 @media screen and (max-width: 768px) {
 
   .packages {
-    height: auto;
+    width: 100%;
   }
 
   .packagesImage {
     height: auto;
   }
 
+  .packagesTitle {
+    margin: 0;
+  }
 }

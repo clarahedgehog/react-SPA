@@ -1,14 +1,14 @@
 import styles from './tour-packages.module.css'
 
-const TourPackages = ({ tourPackage }) => {
+const TourPackages = ({ packages }) => {
 
   return (
     <div className={styles.packages}>
-      <img className={styles.packagesImage} src={tourPackage.image} height="auto" width="100%" />
+      <img className={styles.packagesImage} src={packages.image} height="auto" width="100%" />
       <div className={styles.textContainer}>
-        <label className={styles.packagesCountry}>{tourPackage.country}</label>
-        <label className={styles.packagesRating}>Rating: {tourPackage.rating}</label>
-        <label className={styles.packagesPrice}>Price: {tourPackage.price}</label>
+        <label className={styles.packagesCountry}>{packages.country}</label>
+        <label className={styles.packagesRating}>Rating: {packages.rating}</label>
+        <label className={styles.packagesPrice}>Price: {packages.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</label>
       </div>
     </div>
   )

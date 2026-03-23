@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 100px;
+  flex-wrap: wrap;
+}
+
+.infoText {
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+}
+
+.camera,
+.boat,
+.shopping {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  align-items: center;
+  gap: 16px;
+  height: 300px;
+  justify-content: center;
+}
+
+.beach,
+.ski,
+.health {
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  align-items: center;
+  gap: 16px;
+  height: 300px;
+  justify-content: center;
+}
+
+.beach {
+  background-color: #c2ffef;
+}
+
+.ski {
+  background-color: #1255b5;
+}
+
+.health {
+  background-color: #feef60;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 40px;
+  background-color: #3b3b3d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .categoryContainer {
+    gap: 8px;
+    padding: 24px;
+    flex-direction: column;
+  }
+
+  .camera,
+  .boat,
+  .shopping,
+  .beach,
+  .ski,
+  .health {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+}
