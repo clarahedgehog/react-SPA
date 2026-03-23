@@ -4,7 +4,7 @@ For this assignment we were required to build a Single Page Application in React
 
 ## Link to the deployed website 
 
-[Vercel](https://multipage-website-sable.vercel.app/)
+[Vercel]()
 
 ## Link to the GitHub repository 
 
