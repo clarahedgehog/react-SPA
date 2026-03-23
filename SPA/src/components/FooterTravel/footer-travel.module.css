@@ -19,3 +19,9 @@
   margin: 0;
   font-family: "Quicksand", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .footerTitle {
+    font-size: 2rem;
+  }
+}

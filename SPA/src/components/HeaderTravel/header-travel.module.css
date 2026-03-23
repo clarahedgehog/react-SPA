@@ -22,6 +22,7 @@
   color: white;
   flex-direction: column;
   padding: 100px;
+  text-align: start;
 }
 
 .title {
@@ -62,6 +63,8 @@
   .headerContainer {
     display: flex;
     flex-direction: column;
+    height: auto;
+    background-position: 0%
   }
 
   .header {
@@ -78,10 +81,11 @@
 
   .title {
     font-size: 3rem;
+    text-align: center;
   }
 
   .text {
-    width: 100%;
+    display: none;
   }
 
 }
